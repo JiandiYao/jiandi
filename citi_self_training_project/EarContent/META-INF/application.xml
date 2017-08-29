@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" id="Application_ID" version="7">
+  <display-name>citi_self_training_project</display-name>
+  <module>
+    <ejb>citi_self_training_projectEJB.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>citi_self_training_projectWeb.war</web-uri>
+      <context-root>citi_self_training_projectWeb</context-root>
+    </web>
+  </module>
+  <module>
+    <java>citi_self_training_projectClient.jar</java>
+  </module>
+</application>
