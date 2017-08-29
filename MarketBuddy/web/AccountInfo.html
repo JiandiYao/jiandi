@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Market Buddy</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+  <!--Not sure next 2 lines-->
+  <meta name="keywords" content="keyword1, keyword2, keyword3, etc..." />
+  <meta name="description" content="Description of website here..." />
+
+  <link href="../CSS/style1.css" media="screen" rel="stylesheet" type="text/css" />  
+<script src="js/fetchAccountInfo.js" ></script>
+
+ </head>
+
+<body>
+<div id="main">
+<div id="interior">
+<div id="top">
+<div id="logo_container">
+<div id="logo">
+Market Buddy &nbsp;&nbsp;&nbsp;
+<p id="logo_info"> Your Personal Market Manager!&nbsp;&nbsp;&nbsp;</p></div>
+</div>
+<div id="slogan"><img src="../images/2.jpg" width="188" height="122"  alt="Company Slogan" /></div>
+</div>
+<div class="clear"></div>
+<div id="mid">
+<div id="left">
+<div id="navbar">
+<ul>
+<li class="UserInfo"><a href="UserInfo.html">User Info</a></li>
+<li class="AccountInfo"><a href="AccountInfo.html">Account Info</a></li>
+<li class="ViewStock"><a href="ViewStock.html">View Stock</a></li>
+<li class="ViewStockTrend"><a href="ViewStockTrend.html">View Stock trend</a>
+<li class="Log"><a href="log.html">Client Log History</a></li>
+<li class="Logout"><a id="logout" onclick="logout()">Log out </a></li>
+</ul>
+</div>
+<div id="left_author">
+<h2>Group Member</h2>
+<h3>Jiandi Yao</h3>
+<p>&nbsp;&nbsp;&nbsp;<a href="">j25yao@uwaterloo.ca</a></p>
+<h3>Chengpei Shi</h3>
+<p>&nbsp;&nbsp;&nbsp;<a href="">c2shi@uwaterloo.ca</a></p>
+</div>
+</div>
+<div id="right">
+
+<!--form transfor info to target file
+--need add the target file in action-->
+<!--<form action="" method="">
+<div id="right_bar">
+<button type="button" class="button" id="accountSearchBtn">Search</button>
+<input type="text" id="accountSearch" placeholder="symbol/name">
+</div>
+<form>-->
+<div id="account_bar">
+<table id="dataTable"  class="market_table" width=98% rules="all">
+<TH>Account ID</TH><TH>Balance</TH><TH>Stock Symbol</TH><TH>Quantity</TH><TH>Bid Price</TH><TH>Time</TH><TH>Sell</TH>
+
+</table>
+
+</div>
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="footer">
+
+This website is copyright (C) 2013 ECE750-T26 A2. All rights reserved.<br />
+? Market Buddy | <a href="welcome.html">Site Map</a><br />
+
+</div>
+
+</body></html>
+

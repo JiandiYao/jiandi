@@ -1,0 +1,93 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Market Buddy</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+  <!--Not sure next 2 lines-->
+  <meta name="keywords" content="keyword1, keyword2, keyword3, etc..." />
+  <meta name="description" content="Description of website here..." />
+
+  <link href="../CSS/style1.css" media="screen" rel="stylesheet" type="text/css" />  
+<script src="js/fetchUserInfo.js" ></script>
+
+ </head>
+
+<body>
+<div id="main">
+<div id="interior">
+<div id="top">
+<div id="logo_container">
+<div id="logo">
+Market Buddy &nbsp;&nbsp;&nbsp;
+<p id="logo_info"> Your Personal Market Manager!&nbsp;&nbsp;&nbsp;</p></div>
+</div>
+<div id="slogan"><img src="../images/2.jpg" width="188" height="122"  alt="Company Slogan" /></div>
+</div>
+<div class="clear"></div>
+<div id="mid">
+<div id="left">
+<div id="navbar">
+<ul>
+<li class="UserInfo"><a href="UserInfo.html">User Info</a></li>
+<li class="AccountInfo"><a href="AccountInfo.html">Account Info</a></li>
+<li class="ViewStock"><a href="ViewStock.html">View Stock</a></li>
+<li class="ViewStockTrend"><a href="ViewStockTrend.html">View Stock trend</a>
+<li class="Log"><a href="log.html">Client Log History</a></li>
+<li class="Logout"><a id="logout" onclick="logout()">Log out </a></li>
+</ul>
+</div>
+<div id="left_author">
+<h2>Group Member</h2>
+<h3>Jiandi Yao</h3>
+<p>&nbsp;&nbsp;&nbsp;<a href="">j25yao@uwaterloo.ca</a></p>
+<h3>Chengpei Shi</h3>
+<p>&nbsp;&nbsp;&nbsp;<a href="">c2shi@uwaterloo.ca</a></p>
+</div>
+</div>
+<div id="right">
+
+<!--form transfor info to target file
+--need add the target file in action-->
+<!--<form  method="post" action="ModifyUserInfo.html">
+<div id="right_bar">
+<button type="button" class="button" id="userInfoModifyBtn">Modify</button>
+</div>
+</form>-->
+<div id="User_Info">
+<h2>User Information:</h2>
+<table id="userInfo_table" width=100%>
+<tr>
+   <th>client ID:</th>
+   <td><div id="clientID"> </div></td></tr>
+<tr>
+   <th>Firstname:</th>
+   <td><div id="firstname"> </div></td></tr>  
+<tr>
+   <th>Lastname:</th>
+   <td><div id="lastname"> </div></td></tr>
+<tr>
+   <th>Address:</th>
+   <td><div id="address"> </div></td></tr>
+<tr>
+   <th>Phone:</th>
+   <td><div id="phone"> </div></td></tr>
+<tr>
+   <th>E-mail:</th>
+   <td><div id="email"> </div></td></tr>
+</table>
+</div>
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="footer">
+This website is copyright (C) 2013 ECE750-T26 A2. All rights reserved.<br />
+? Market Buddy | <a href="welcome.html">Site Map</a><br />
+
+</div>
+
+</body></html>
