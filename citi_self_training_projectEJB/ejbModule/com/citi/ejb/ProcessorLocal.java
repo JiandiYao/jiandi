@@ -1,0 +1,17 @@
+package com.citi.ejb;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.ejb.Local;
+
+import com.citi.ejb.stock.StockInfo;
+import com.citi.ejb.stock.Trade;
+
+@Local
+public interface ProcessorLocal {
+	/*
+	 * <user, List<Trade>>
+	 */
+	public Map<String, List<Trade>> getTrades(List<StockInfo> stocks);
+}
