@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-02-03T05:57:46 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ClosingFactSheet" pageWidth="595" pageHeight="842" columnWidth="591" leftMargin="2" rightMargin="2" topMargin="15" bottomMargin="15" uuid="697e367e-72dc-4f5d-918a-4fbd2c8dcc7f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFCFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<paragraph lineSpacing="Single"/>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH_shaded" style="table_TH" mode="Opaque" backcolor="#CCCCCC" fill="Solid" fontName="Lucida Bright" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD_shaded" style="table_TD" mode="Opaque" backcolor="#CCCCCC" fill="Solid" fontName="Lucida Bright" isBold="true">
+		<box>
+			<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+		</box>
+	</style>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#CCCCCC"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="gross_spread_dataset" uuid="0c6e5887-6b58-490e-882d-7923967a58dc">
+		<field name="gross_spread" class="java.lang.String"/>
+		<field name="gross_spread_bond" class="java.math.BigDecimal"/>
+		<field name="gross_spread_total" class="java.math.BigDecimal"/>
+		<variable name="sum_gs_bond" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{gross_spread_bond}]]></variableExpression>
+		</variable>
+		<variable name="sum_gs_total" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{gross_spread_total}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="expenses_breakdown_dataset" uuid="08f239b2-dd69-42f5-9dfa-07d0f01a6e56">
+		<field name="expense_breakdown" class="java.lang.String"/>
+		<field name="expense_breakdown_bond" class="java.math.BigDecimal"/>
+		<field name="expense_breakdown_total" class="java.math.BigDecimal"/>
+		<variable name="expenses_breakdown_sum" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{expense_breakdown_bond}]]></variableExpression>
+		</variable>
+		<variable name="expenses_breakdown_total_sum" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{expense_breakdown_total}]]></variableExpression>
+			<initialValueExpression><![CDATA[]]></initialValueExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="cgm_allotment_dataset" uuid="db32364b-f878-4624-9efb-64f05feb9c5f">
+		<field name="cgm_allotment" class="java.lang.String"/>
+		<field name="retail" class="java.math.BigDecimal"/>
+		<field name="institutional" class="java.math.BigDecimal"/>
+	</subDataset>
+	<subDataset name="revenue_summary_dataset" uuid="a0ac84a3-0312-4869-a028-865250ad075e">
+		<field name="cgm_bond_revenue" class="java.lang.String"/>
+		<field name="cgm_bond_revenue_total" class="java.math.BigDecimal"/>
+		<variable name="cgm_bond_revenue_sum" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{cgm_bond_revenue_total}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="manager_allocation_dataset" uuid="f72f4442-53e4-4732-8b9e-792e4be0e869">
+		<field name="row_number" class="java.lang.Integer"/>
+		<field name="manager_name" class="java.lang.String"/>
+		<field name="role" class="java.lang.String"/>
+		<field name="management_fee" class="java.math.BigDecimal"/>
+		<field name="management_fee_percentage" class="java.math.BigDecimal"/>
+		<field name="underwriting_liability_fee" class="java.math.BigDecimal"/>
+		<field name="underwriting_liability_percentage" class="java.math.BigDecimal"/>
+		<field name="other_revenue" class="java.math.BigDecimal"/>
+		<field name="other_revenue_percentage" class="java.math.BigDecimal"/>
+		<field name="takedown" class="java.math.BigDecimal"/>
+		<field name="takedown_percentage" class="java.math.BigDecimal"/>
+		<variable name="ma_management_Fee" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{management_fee}]]></variableExpression>
+		</variable>
+		<variable name="ma_management_fee_perc" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{management_fee_percentage}]]></variableExpression>
+		</variable>
+		<variable name="aau_underwriting_liability" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{underwriting_liability_fee}]]></variableExpression>
+		</variable>
+		<variable name="aau_underwriting_liability_perc" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{underwriting_liability_percentage}]]></variableExpression>
+		</variable>
+		<variable name="ma_other_revenue" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{other_revenue}]]></variableExpression>
+		</variable>
+		<variable name="other_revenue_perc" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{other_revenue_percentage}]]></variableExpression>
+		</variable>
+		<variable name="ma_takedown" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{takedown}]]></variableExpression>
+		</variable>
+		<variable name="takedown_perc" class="java.math.BigDecimal" calculation="Sum">
+			<variableExpression><![CDATA[$F{takedown_percentage}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<parameter name="GROSS_SPREAD_DS" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="EXPENSES_BREAKDOWN_DS" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="CGM_ALLOTMENTS_DS" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="REVENUE_SUMMARY_DS" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="MANAGER_ALLOCATION_DS" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<field name="client_name" class="java.lang.String"/>
+	<field name="deal_id" class="java.lang.Long"/>
+	<field name="deal_desc" class="java.lang.String"/>
+	<field name="transaction" class="java.lang.String"/>
+	<field name="par_amount" class="java.math.BigDecimal"/>
+	<field name="banking_team" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="dafi" class="java.lang.String"/>
+	<field name="sale_date" class="java.util.Date"/>
+	<field name="del_date" class="java.util.Date"/>
+	<field name="cgm_roles" class="java.lang.String"/>
+	<field name="comment" class="java.lang.String"/>
+	<field name="submittedBy" class="java.lang.String"/>
+	<field name="ipreo_deal_code" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="390" height="20" forecolor="#003399" uuid="1e0be842-0c6b-4571-987a-108dbfbdbe2b"/>
+				<textElement>
+					<font fontName="Lucida Bright" size="12" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[MUNICIPAL SECURITIES DIVISION - Closing Fact Sheet]]></text>
+			</staticText>
+			<textField pattern="yyyy-MM-dd">
+				<reportElement x="398" y="0" width="96" height="20" uuid="1c630248-d270-4f96-b1bb-18b38beb9a52"/>
+				<textElement textAlignment="Right">
+					<font fontName="Lucida Bright" size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="21" width="590" height="1" forecolor="#003399" uuid="964dfa35-1f9b-478e-aad8-8428472e20c9"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="565" y="0" width="10" height="20" uuid="d2d4d056-b2fd-46a7-9b16-04a90a42d36c"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="537" y="0" width="28" height="20" uuid="41e95584-fd6a-4777-b48c-3bf2bd206009"/>
+				<textElement textAlignment="Right">
+					<font fontName="Lucida Bright" isItalic="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Page:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="706" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="82" height="15" uuid="8f697bec-2b2f-431c-8303-3d406081eda9"/>
+				<textElement>
+					<font fontName="Lucida Bright" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<text><![CDATA[Client Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="360" y="0" width="69" height="15" uuid="9aa8744b-597f-4ac7-95f7-1dabb2dfe345"/>
+				<textElement>
+					<font fontName="Lucida Bright" size="8" isBold="true" isItalic="false"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<text><![CDATA[DAFI:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="0" width="159" height="15" uuid="db3c8cd0-8dc8-43a9-a953-747e8f3a8c71"/>
+				<textElement>
+					<font fontName="Lucida Bright" size="8" isBold="false" isItalic="false"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dafi}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement key="table 3" positionType="Float" x="1" y="253" width="285" height="110" uuid="97bcb8a1-3871-438b-8836-9fdd27164618"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="cgm_allotment_dataset" uuid="fd2cefa1-f6b7-4ceb-a219-e972158b7200">
+						<dataSourceExpression><![CDATA[$P{CGM_ALLOTMENTS_DS}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="114" uuid="57e211f1-e6b3-4404-9bb9-b0460ff93921">
+						<jr:columnHeader style="table 3_CH" height="14" rowSpan="1">
+							<box leftPadding="1"/>
+							<staticText>
+								<reportElement x="0" y="0" width="113" height="14" uuid="8a2b15e4-a9c4-40ba-83bb-c8849c330e7d"/>
+								<textElement>
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[CGM Allotments]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="14" rowSpan="1">
+							<box leftPadding="1"/>
+							<textField>
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="113" height="14" uuid="5b05c32d-34be-4a9e-94f3-bfa0b66b5475"/>
+								<textElement>
+									<font fontName="Lucida Bright" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cgm_allotment}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="87" uuid="e757b94d-1337-4eb9-9a13-a690523f4b58">
+						<jr:columnHeader style="table 3_CH" height="14" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="86" height="14" uuid="e23e66c0-6627-42eb-96d9-43759bd86fd4"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Retail]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="14" rowSpan="1">
+							<textField pattern="#,##0">
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="86" height="14" uuid="64467aa3-db62-4f95-8f66-3b4523523db5"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="8" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{retail}]]></textFieldExpression>
+								<patternExpression><![CDATA[$F{cgm_allotment}.indexOf("Avg Takedown") > -1 ? "#,##0.000000" : "#,##0"]]></patternExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="84" uuid="b2bcb7a0-3a14-45e8-8805-422fdc22c48d">
+						<jr:columnHeader style="table 3_CH" height="14" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="83" height="14" uuid="6ecf9f61-5b5f-4ef7-ada5-161b0d7d0c32"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Institutional]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="14" rowSpan="1">
+							<textField pattern="#,##0">
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="83" height="14" uuid="12be00fc-6fae-4136-8b58-0ea0da860988"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="8" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{institutional}]]></textFieldExpression>
+								<patternExpression><![CDATA[$F{cgm_allotment}.indexOf("Avg Takedown") > -1 ? "#,##0.000000" : "#,##0"]]></patternExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 4" positionType="Float" x="1" y="380" width="280" height="126" uuid="2a528994-0623-4c3b-b04c-c46a565ac9ef"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="revenue_summary_dataset" uuid="a6c75b1d-f602-47c4-8cda-f8fae37e49c3">
+						<dataSourceExpression><![CDATA[$P{REVENUE_SUMMARY_DS}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="152" uuid="733fcb6f-3e35-4f2a-8a49-9f926433d9a5">
+						<jr:tableHeader style="table 4_TH" height="18" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="151" height="18" uuid="974546f3-6d48-4d3d-9c5c-524b2b74c7fa"/>
+								<textElement verticalAlignment="Top">
+									<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false" isUnderline="true"/>
+								</textElement>
+								<text><![CDATA[Revenue Summary]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnHeader style="table 4_CH" height="14" rowSpan="1">
+							<box leftPadding="1"/>
+							<staticText>
+								<reportElement x="0" y="0" width="151" height="14" uuid="28c92269-29c9-4470-88fc-b67c36585b0f"/>
+								<textElement>
+									<font fontName="Lucida Bright" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[CGM Bond Revenue]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 4_CH" height="14" rowSpan="1">
+							<box leftPadding="1"/>
+							<staticText>
+								<reportElement x="0" y="0" width="151" height="14" uuid="f41cc73f-1694-4910-bab4-aa5f65f57d4b"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Total CGM Revenues:]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 4_TD" height="14" rowSpan="1">
+							<box leftPadding="1"/>
+							<textField>
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="151" height="14" uuid="031b1f3b-008f-40af-b676-69df890747b2"/>
+								<textElement>
+									<font fontName="Lucida Bright" size="9" isItalic="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cgm_bond_revenue}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="122" uuid="115d1e0f-997d-4020-a02b-cdf2e07bb309">
+						<jr:tableHeader style="table 4_TH" height="18" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+						</jr:tableHeader>
+						<jr:columnHeader style="table 4_CH" height="14" rowSpan="1">
+							<box rightPadding="1"/>
+							<staticText>
+								<reportElement x="0" y="0" width="121" height="14" uuid="342c25fb-9a94-4e15-bf17-c354e2010b09"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 4_CH" height="14" rowSpan="1">
+							<textField pattern="#,##0.00">
+								<reportElement x="0" y="0" width="121" height="14" uuid="7f7a66a0-ac36-40e6-b169-e7b0d9eb9451"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Bright" size="8" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{cgm_bond_revenue_sum}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 4_TD" height="14" rowSpan="1">
+							<box rightPadding="1"/>
+							<textField pattern="#,##0.00">
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="121" height="14" uuid="ee2b128f-bf89-49b7-b5df-e61b92e82ee0"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="8" isItalic="false"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cgm_bond_revenue_total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 5" positionType="Float" x="2" y="547" width="588" height="77" uuid="2e599264-23d7-43b4-ae4f-62466d7456be"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="manager_allocation_dataset" uuid="bbf712c3-b729-4683-8324-5976b10c291d">
+						<dataSourceExpression><![CDATA[$P{MANAGER_ALLOCATION_DS}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="182" uuid="582bdc22-314c-4734-b186-ce9d86dbf293">
+						<jr:tableHeader height="46" rowSpan="1">
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="1" y="0" width="181" height="19" uuid="671c5849-cb1b-4dd4-90f4-78438bb827bb"/>
+								<textElement verticalAlignment="Top">
+									<font fontName="Lucida Bright" isBold="true" isUnderline="true"/>
+								</textElement>
+								<text><![CDATA[Manager Allocation]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="18" width="182" height="28" uuid="884f40e6-0e1e-4f9a-881a-9e2c8b4c5977"/>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:column width="15" uuid="ffa8226a-dacf-4090-aedc-ca7698fa4e2e">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box leftPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="14" height="16" uuid="64cbdc12-4b9f-4991-a066-ef985c526366"/>
+									<textElement>
+										<font fontName="Lucida Bright" size="8" isBold="true"/>
+									</textElement>
+									<text><![CDATA[No]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1"/>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box leftPadding="1"/>
+								<textField>
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="14" height="14" uuid="6dc9b2ea-8253-4328-af24-d52d2b382f41"/>
+									<textElement>
+										<font fontName="Lucida Bright" size="8" isBold="true" isItalic="true" isStrikeThrough="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{row_number}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="96" uuid="14bfacf9-c319-40a7-a903-9a5788384a9e">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box leftPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="95" height="16" uuid="c0d09d11-3550-4516-9726-b4fd099a9a57"/>
+									<textElement>
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[Manager Name]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<box leftPadding="0">
+									<leftPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.0"/>
+								</box>
+								<staticText>
+									<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="95" height="26" uuid="b939a983-078f-423e-a54b-a57d5df6c04f">
+										<property name="isStretchWithOverflow" value="true"/>
+									</reportElement>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false" isUnderline="false"/>
+									</textElement>
+									<text><![CDATA[Total  (All Underw]]></text>
+								</staticText>
+							</jr:columnFooter>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box leftPadding="1"/>
+								<textField isStretchWithOverflow="true">
+									<reportElement style="Row" stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="0" width="95" height="14" uuid="d47da734-f023-412e-acf9-ac2ea96f7490">
+										<property name="isStretchWithOverflow" value="true"/>
+									</reportElement>
+									<textElement>
+										<font fontName="Lucida Bright" size="7" isBold="false" isItalic="false" isUnderline="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{manager_name}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="71" uuid="60be6953-5c07-46f0-9551-6faa4d2a6e21">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box leftPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="70" height="16" uuid="59597de6-0b9d-4ae4-b39a-e5b7afbdab11"/>
+									<textElement>
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[Role]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<box>
+									<leftPen lineWidth="0.0"/>
+								</box>
+								<staticText>
+									<reportElement x="0" y="0" width="70" height="26" uuid="5060d2a0-846f-4f59-8955-24314b938ac0"/>
+									<textElement>
+										<font fontName="Lucida Bright" size="9" isBold="true"/>
+									</textElement>
+									<text><![CDATA[riter):]]></text>
+								</staticText>
+							</jr:columnFooter>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box leftPadding="1"/>
+								<textField pattern="">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="70" height="14" uuid="954d9d62-f4f9-48b2-a383-f2c85f9fb822"/>
+									<textElement>
+										<font fontName="Lucida Bright" size="7" isBold="false" isItalic="false" isUnderline="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{role}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+					<jr:columnGroup width="103" uuid="56695224-33b0-4dfa-ad3b-33cda13784d9">
+						<jr:tableHeader height="46" rowSpan="1">
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="18" width="103" height="28" uuid="730de945-91e3-41bc-a5ea-32cc219a1e75"/>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Management Fees]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:column width="67" uuid="db9d3e29-8270-4acf-9eca-5452d395c484">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="66" height="16" uuid="b0e5226c-f812-4d27-a21f-900dc78fc3f6"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[Dollar]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="66" height="26" uuid="2d9cac00-0532-46d9-8fbd-9fb69ae913b8"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{ma_management_Fee}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="66" height="14" uuid="47130d05-d189-4f69-80a9-f7ea11c3fcb1"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{management_fee}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="36" uuid="d475c4c8-3dcd-474f-8b90-8645923b7d40">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="35" height="16" uuid="9644c019-ebfb-4383-ba05-6ff2e4cc87c3"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[%]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="35" height="26" uuid="745b148c-056a-4340-bb2f-050577523709"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{ma_management_fee_perc}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00&apos;%&apos;">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="35" height="14" uuid="eb96cec9-e96a-4c39-a200-07ee89a70d2f"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{management_fee_percentage}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+					<jr:columnGroup width="106" uuid="295c96f0-0908-4ca5-ab9c-bd65eeeef911">
+						<jr:tableHeader height="46" rowSpan="1">
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="18" width="106" height="28" uuid="88c7db0a-0341-4c23-8e2a-965048f98a77"/>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+								</textElement>
+								<text><![CDATA[AAU Underwriting Liability]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:column width="75" uuid="b6556380-37d0-4949-8e8e-d0870d04c1c0">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="74" height="16" uuid="47b9ce02-86ca-46be-a917-da007e53edd7"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[Dollar]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="74" height="26" uuid="608b91f4-cd42-4577-b9df-26eef3e55796"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{aau_underwriting_liability}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="74" height="14" uuid="4dd51738-cb28-4c0a-9257-33d8a6d03a13"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{underwriting_liability_fee}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="31" uuid="81e9d202-5d31-404c-b201-11b2cb40e552">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="30" height="16" uuid="b0da3ba0-8f5c-4f63-b995-062ca353c654"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[%]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="30" height="26" uuid="42a60230-22cd-4826-bdeb-817be55ea0b3"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{aau_underwriting_liability_perc}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00&apos;%&apos;">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="30" height="14" uuid="4b6e922d-5915-4516-bc48-a9eff0c1fc37"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{underwriting_liability_percentage}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+					<jr:columnGroup width="93" uuid="f2dc7352-5d37-4aed-af9d-2d36bfa5660b">
+						<jr:tableHeader height="46" rowSpan="1">
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="18" width="93" height="28" uuid="97c4a3ee-b8c6-4273-91a9-edffd25671b4"/>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Other Reveunes]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:column width="62" uuid="162cb5a5-d633-4603-bd45-08f420bd33eb">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="61" height="16" uuid="96a1f5e2-1e51-4fb2-be81-6fa0c0a35a02"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[Dollar]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="61" height="26" uuid="09d3d7f6-151c-4086-b9d3-524e6bde6fd7"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{ma_other_revenue}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="61" height="14" uuid="ec58e2ec-f44f-42cc-b54c-619f56841302"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{other_revenue}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="31" uuid="e59d94e3-1b6f-44ff-9330-abdceeb2aac2">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="30" height="16" uuid="84861fe6-a682-4a3d-a75b-cf4c8559d1ed"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[%]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="30" height="26" uuid="6ab15070-62aa-4337-9f4b-9de7fc429e2b"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{other_revenue_perc}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00&apos;%&apos;">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="30" height="14" uuid="2a516976-a042-4824-bd7e-49fbf5e5e887"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{other_revenue_percentage}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+					<jr:columnGroup width="96" uuid="63fe9929-c1a9-4cfb-a141-a9ede247027a">
+						<jr:tableHeader height="46" rowSpan="1">
+							<box>
+								<pen lineWidth="0.25"/>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="18" width="96" height="28" uuid="78abfe16-38f5-4f7d-88d4-75bfe517d714"/>
+								<box>
+									<topPen lineWidth="0.5"/>
+									<leftPen lineWidth="0.5"/>
+									<bottomPen lineWidth="0.5"/>
+									<rightPen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Top">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Take Down]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:column width="65" uuid="c7dbb817-e3b6-4320-aafb-e089eaac3071">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="64" height="16" uuid="9c1cf561-a9c5-48a9-8ed5-82d523968010"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true" isItalic="false"/>
+									</textElement>
+									<text><![CDATA[Dollar]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="64" height="26" uuid="6c5cdacc-d93a-4302-b68e-d29cfdf7d55b"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{ma_takedown}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="64" height="14" uuid="87f699a5-2307-4f3b-9839-5030ac7e06e2"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{takedown}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="31" uuid="43c74dea-8c69-4d7a-93b6-3f023b5f7097">
+							<jr:columnHeader style="table 5_TH" height="16" rowSpan="1">
+								<box rightPadding="1"/>
+								<staticText>
+									<reportElement x="0" y="0" width="30" height="16" uuid="f2785cda-fa03-4442-ac64-844f9090d4d9"/>
+									<textElement textAlignment="Right" verticalAlignment="Middle">
+										<font fontName="Lucida Bright" size="9" isBold="true"/>
+									</textElement>
+									<text><![CDATA[%]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:columnFooter style="table 5_TH" height="26" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="30" height="26" uuid="579d3e9f-eed6-4adf-b911-9d7b77d2c005"/>
+									<textElement textAlignment="Right" verticalAlignment="Top">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{takedown_perc}]]></textFieldExpression>
+								</textField>
+							</jr:columnFooter>
+							<jr:detailCell style="table 5_TD" height="14" rowSpan="1">
+								<box rightPadding="1"/>
+								<textField pattern="#,##0.00&apos;%&apos;">
+									<reportElement style="Row" mode="Opaque" x="0" y="0" width="30" height="14" uuid="2a664d67-03cc-4446-9f1b-7609b3e81097"/>
+									<textElement textAlignment="Right">
+										<font fontName="Lucida Bright" size="7" isBold="true" isItalic="false"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{takedown_percentage}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="83" y="0" width="314" height="15" uuid="d9f9905a-851a-46ee-b807-ba863a9112bc"/>
+				<textElement>
+					<font fontName="Lucida Bright" size="8" isBold="false" isItalic="false"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{client_name}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement key="table" positionType="Float" x="2" y="131" width="285" height="110" uuid="b2ebcfe8-748f-4eff-9538-9d61ce68ead6"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="gross_spread_dataset" uuid="25fb2270-440a-47f9-a192-4bb5bfdc6e71">
+						<dataSourceExpression><![CDATA[$P{GROSS_SPREAD_DS}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="278" uuid="506d377b-ce15-4925-a6b0-a7d50d8d031f">
+						<jr:tableHeader height="21" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="276" height="21" uuid="19906c14-80e4-441e-849e-31d6c7f2e084"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Lucida Bright" size="9" isBold="true" isUnderline="true"/>
+								</textElement>
+								<text><![CDATA[Gross Spread Allotments]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnGroup width="278" uuid="2dd7348c-d59b-427a-a9e3-d31f5a0e3a26">
+							<jr:column width="81" uuid="b825864e-8bd3-42b5-aa61-e2cf8abb6448">
+								<jr:columnHeader style="table 1_TH" height="15" rowSpan="1">
+									<box leftPadding="1"/>
+									<staticText>
+										<reportElement x="0" y="0" width="80" height="15" uuid="fe7d8b4f-b485-4806-9bb7-c97f7e0bd36e"/>
+										<textElement textAlignment="Left">
+											<font fontName="Lucida Bright" size="9" isBold="true"/>
+										</textElement>
+										<text><![CDATA[Gross Spread ]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:columnFooter height="14" rowSpan="1">
+									<box leftPadding="1">
+										<topPen lineWidth="0.5"/>
+										<leftPen lineWidth="0.5"/>
+										<bottomPen lineWidth="0.5"/>
+										<rightPen lineWidth="0.5"/>
+									</box>
+									<staticText>
+										<reportElement x="0" y="0" width="80" height="14" uuid="4d671ab0-3439-4858-8e46-f74764dd96f2"/>
+										<textElement verticalAlignment="Top">
+											<font fontName="Lucida Bright" size="9" isBold="true"/>
+										</textElement>
+										<text><![CDATA[Gross Spread:]]></text>
+									</staticText>
+								</jr:columnFooter>
+								<jr:detailCell style="table 1_TD" height="14" rowSpan="1">
+									<box leftPadding="1"/>
+									<textField>
+										<reportElement style="Row" mode="Opaque" x="0" y="0" width="80" height="14" uuid="d3fa176e-8052-4d21-aa89-2f4ba78cf859"/>
+										<textElement>
+											<font fontName="Lucida Bright" size="8"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{gross_spread}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:columnGroup width="197" uuid="029e64db-b5c7-4d87-847f-c2588e785aee">
+								<jr:column width="100" uuid="be17b677-4e39-4435-b3e7-f5c620175b4e">
+									<jr:columnHeader style="table 1_TH" height="15" rowSpan="1">
+										<box rightPadding="1">
+											<leftPen lineWidth="0.5"/>
+											<rightPen lineWidth="0.5"/>
+										</box>
+										<staticText>
+											<reportElement x="0" y="0" width="99" height="15" uuid="2d32f0fc-8457-4ac9-8f4d-d4a9de2628bd"/>
+											<textElement textAlignment="Right" verticalAlignment="Top">
+												<font fontName="Lucida Bright" size="9" isBold="true"/>
+											</textElement>
+											<text><![CDATA[$/Bond]]></text>
+										</staticText>
+									</jr:columnHeader>
+									<jr:columnFooter height="14" rowSpan="1">
+										<box>
+											<topPen lineWidth="0.5"/>
+											<leftPen lineWidth="0.5"/>
+											<bottomPen lineWidth="0.5"/>
+											<rightPen lineWidth="0.5"/>
+										</box>
+										<textField pattern="#,##0.000000">
+											<reportElement x="0" y="0" width="99" height="14" uuid="e0cc6538-e48a-4466-a56c-9a5f3eaf84cf"/>
+											<textElement textAlignment="Right" verticalAlignment="Middle">
+												<font fontName="Lucida Bright" size="8" isBold="true"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$V{sum_gs_bond}]]></textFieldExpression>
+										</textField>
+									</jr:columnFooter>
+									<jr:detailCell style="table 1_TD" height="14" rowSpan="1">
+										<box rightPadding="1"/>
+										<textField pattern="#,##0.000000">
+											<reportElement style="Row" mode="Opaque" x="0" y="0" width="99" height="14" uuid="8a40dda7-ef62-4983-b476-cb82ecf9e024"/>
+											<textElement textAlignment="Right">
+												<font fontName="Lucida Bright" size="8" isBold="true"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{gross_spread_bond}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+								<jr:column width="97" uuid="0a7d067d-7c3b-41e4-a76e-3a05da11a285">
+									<jr:columnHeader style="table 1_TH" height="15" rowSpan="1">
+										<box rightPadding="1">
+											<leftPen lineWidth="0.5"/>
+										</box>
+										<staticText>
+											<reportElement x="0" y="0" width="96" height="15" uuid="cc263990-4128-4dc0-a207-f2f417ed7d54"/>
+											<textElement textAlignment="Right" verticalAlignment="Top">
+												<font fontName="Lucida Bright" size="9" isBold="true"/>
+											</textElement>
+											<text><![CDATA[Total $]]></text>
+										</staticText>
+									</jr:columnHeader>
+									<jr:columnFooter height="14" rowSpan="1">
+										<box>
+											<topPen lineWidth="0.5"/>
+											<leftPen lineWidth="0.5"/>
+											<bottomPen lineWidth="0.5"/>
+											<rightPen lineWidth="0.5"/>
+										</box>
+										<textField pattern="#,##0.00">
+											<reportElement x="0" y="0" width="96" height="14" uuid="11540608-38c4-4625-b342-81ad458c87d0"/>
+											<textElement textAlignment="Right" verticalAlignment="Middle">
+												<font fontName="Lucida Bright" size="8" isBold="true"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$V{sum_gs_total}]]></textFieldExpression>
+										</textField>
+									</jr:columnFooter>
+									<jr:detailCell style="table 1_TD" height="14" rowSpan="1">
+										<box rightPadding="1"/>
+										<textField pattern="#,##0.00">
+											<reportElement style="Row" mode="Opaque" x="0" y="0" width="96" height="14" uuid="36b60eb8-e415-450a-b9a5-6518799256c0"/>
+											<textElement textAlignment="Right">
+												<font fontName="Lucida Bright" size="8" isBold="true"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{gross_spread_total}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+							</jr:columnGroup>
+						</jr:columnGroup>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 2" positionType="Float" mode="Transparent" x="292" y="129" width="291" height="377" uuid="a8292afe-3abb-4fa5-833b-39e15d14dffe"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="expenses_breakdown_dataset" uuid="4b9d53ae-c71a-4c82-ac6e-be80955443e2">
+						<dataSourceExpression><![CDATA[$P{EXPENSES_BREAKDOWN_DS}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="108" uuid="da667c08-4f4f-4660-84e4-f93c59487f0d">
+						<jr:tableHeader style="table 2_TH" height="19" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="2" y="0" width="106" height="19" uuid="1025e206-e198-4fad-beea-a27f4e6bac1e"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Lucida Bright" size="9" isBold="true" isUnderline="true"/>
+								</textElement>
+								<text><![CDATA[Expenses Breakdown]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnHeader style="table 1_TH" height="15" rowSpan="1">
+							<box leftPadding="1"/>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="107" height="14" uuid="425a512a-c723-4dce-8161-21a0a8f53594"/>
+								<textElement>
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Expenses Breakdown]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 2_TH" height="15" rowSpan="1">
+							<box leftPadding="1">
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="107" height="14" uuid="086924eb-6ce5-43c5-a0a2-cddf0889c78f"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Total:]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table_TD" height="14" rowSpan="1">
+							<box leftPadding="1"/>
+							<textField>
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="107" height="14" uuid="3927c8b9-74b6-408a-83f3-fd9ac2ee98ae"/>
+								<textElement>
+									<font fontName="Lucida Bright" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{expense_breakdown}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="96" uuid="5154b131-29d0-43c1-bf49-8738619bd3d4">
+						<jr:tableHeader style="table 2_TH" height="19" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+						</jr:tableHeader>
+						<jr:columnHeader style="table 1_TH" height="15" rowSpan="1">
+							<box rightPadding="1"/>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="95" height="14" uuid="53a0ca01-997f-4108-9953-434e1e39c1ea"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[$/Bond]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 2_TH" height="15" rowSpan="1">
+							<box>
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.000000">
+								<reportElement x="0" y="0" width="95" height="14" uuid="700972cd-33cd-4e10-94d6-d39777661fec"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Bright" size="8" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{expenses_breakdown_sum}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table_TD" height="14" rowSpan="1">
+							<box rightPadding="1"/>
+							<textField pattern="#,##0.000000">
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="95" height="14" uuid="114df5a0-419a-4c8d-a8d2-378cb863761d"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{expense_breakdown_bond}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="95" uuid="2961502d-8dff-48f7-bc46-011c8d8585a3">
+						<jr:tableHeader style="table 2_TH" height="19" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+						</jr:tableHeader>
+						<jr:columnHeader style="table 2_TH" height="15" rowSpan="1">
+							<box rightPadding="1"/>
+							<staticText>
+								<reportElement x="0" y="0" width="94" height="14" uuid="70e8a8b8-fd15-4508-9a6c-fc89b7e55374"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="9" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Total $]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 2_TH" height="15" rowSpan="1">
+							<box rightPadding="1">
+								<rightPen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.00">
+								<reportElement mode="Transparent" x="0" y="0" width="94" height="14" uuid="99d260d8-b01e-4b28-9c84-c5020474e657"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font fontName="Lucida Bright" size="8" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{expenses_breakdown_total_sum}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table_TD" height="14" rowSpan="1">
+							<box rightPadding="1"/>
+							<textField pattern="#,##0.00">
+								<reportElement style="Row" mode="Opaque" x="0" y="0" width="94" height="14" uuid="e7d57a59-d787-4b1c-a17e-66a7cb4f5b2e"/>
+								<textElement textAlignment="Right">
+									<font fontName="Lucida Bright" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{expense_breakdown_total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="1" y="33" width="590" height="15" uuid="94f39fd4-a6d6-4164-8901-723a24fc0239"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="82" height="15" uuid="a2361dd9-8f99-4e3e-8b19-6e636aecfc6d"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Deal Par Amount:]]></text>
+				</staticText>
+				<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="83" y="0" width="100" height="15" uuid="7553c7d3-84e9-4610-8e46-f39683c0ec57"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{par_amount}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="360" y="0" width="69" height="15" uuid="097a48e0-4d1a-4794-b59a-bfe1624a54a4"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Del Date:]]></text>
+				</staticText>
+				<textField pattern="yyyy-MM-dd" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="429" y="0" width="160" height="15" uuid="70173c4f-857d-495c-846a-d865ec861fc9"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{del_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="0" y="50" width="591" height="15" uuid="c26d293d-a652-45c9-913a-965097557f77"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="82" height="15" uuid="45165245-fa17-4bb8-8f34-c01693b74a13"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Transaction:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="83" y="0" width="314" height="15" uuid="87c9e411-e1b4-44eb-8d3e-79bce92e45be"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+						<paragraph lineSpacing="Proportional"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{transaction}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="360" y="0" width="69" height="15" uuid="470da6a6-c217-4e61-914b-1091bd59880a"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Status:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="430" y="0" width="159" height="15" uuid="90859e62-31a2-4b26-8a53-979d8376ff75"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="1" y="17" width="590" height="15" uuid="9a20cc3a-7033-47ef-933b-29d7f1eb46b1"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="82" height="15" uuid="071e790a-35cb-40d8-8281-6c68611e857a"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Deal Id:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="83" y="0" width="41" height="15" uuid="04db1221-b1a9-4447-be74-414df4f6f895"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{deal_id}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="125" y="0" width="51" height="15" uuid="1566d52c-7027-4c33-b708-5e1fe399795b"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Description:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="177" y="0" width="219" height="15" uuid="920e3253-4826-474f-8966-abca7acd1f48"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+						<paragraph lineSpacing="Proportional"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{deal_desc}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="360" y="0" width="69" height="15" uuid="142be14f-3d78-422e-bed4-07fd8642ceb9"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+					</textElement>
+					<text><![CDATA[Sale Date:]]></text>
+				</staticText>
+				<textField pattern="yyyy-MM-dd" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="429" y="0" width="160" height="15" uuid="26ee2c12-069e-48cd-83b2-cdc4aecc5400"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sale_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="1" y="66" width="590" height="15" uuid="98d85d9f-f746-443b-b3f7-a217eaa42afa"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="82" height="15" uuid="59b4d55d-9390-4e40-a7f7-e716711ee6b0"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CGM Roles:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="83" y="0" width="314" height="15" uuid="6db74bdf-1e31-4b01-9b68-1db7fe134ffc"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8"/>
+						<paragraph lineSpacing="Proportional"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{cgm_roles}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement positionType="Float" x="360" y="0" width="69" height="15" uuid="c803887e-1480-4be5-8ffa-e006faf2d84d"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Submitted By:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="429" y="0" width="157" height="15" uuid="1614c11a-939b-4115-8da1-0673c511404d"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{submittedBy}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="1" y="84" width="590" height="15" uuid="00c08c30-a9ad-4dab-8378-5b953ab4b012"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="82" height="15" uuid="d43d2f06-7707-4ca1-933a-96e3235d969a"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Banking Team:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="83" y="0" width="505" height="15" uuid="b68519a9-c910-4a9d-95b9-139150106bb0"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="false"/>
+						<paragraph lineSpacing="Proportional"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{banking_team}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="1" y="102" width="590" height="15" uuid="00c08c30-a9ad-4dab-8378-5b953ab4b012"/>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="82" height="15" uuid="34c34e56-f549-4d7b-b2d1-ff6f1b3ede90"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[IPREO Deal Code:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="83" y="0" width="505" height="15" uuid="13a6280c-58a4-4ff4-a4d6-ae0a63d00e81"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="8" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ipreo_deal_code}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="1" y="510" width="589" height="34" uuid="d071f090-90d5-498a-9848-65cd42b5a7dd"/>
+				<staticText>
+					<reportElement isPrintRepeatedValues="false" x="0" y="0" width="100" height="14" uuid="082d86a1-0323-4253-8f37-5564dee9c98b"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="9" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[Comments]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement isPrintRepeatedValues="false" x="0" y="15" width="586" height="19" uuid="68c18949-08df-4916-b53b-40621ab57703"/>
+					<textElement>
+						<font fontName="Lucida Bright" size="9"/>
+						<paragraph lineSpacing="Proportional"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{comment}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
