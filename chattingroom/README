@@ -1,1 +1,3 @@
 This is a desktop application for multi-people chatting room. It's implemented with Java
+A socket server is created to handle the clients messages. It maintains a list of clients. when new messages are recieved, 
+the server will send the new message to the logged in clients.
