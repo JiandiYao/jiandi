@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    
+	 <fragment 
+    	android:id="@+id/map"
+    	android:layout_below="@+id/header"
+  	  	android:layout_width="match_parent"
+  	  	android:layout_height="match_parent"
+  	  	android:name="com.google.android.gms.maps.MapFragment">
+    </fragment>
+	
+	 <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/the_map"
+        android:onClick="onClick_btnNormal"
+        android:text="Normal" />
+
+    <Button
+        android:id="@+id/btnSatellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/the_map"
+        android:layout_toRightOf="@+id/btnTerrain"
+        android:onClick="onClick_btnSatellite"
+        android:text="Satellite" />
+
+    <Button
+        android:id="@+id/btnTerrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNormal"
+        android:layout_alignBottom="@+id/btnNormal"
+        android:layout_toRightOf="@+id/btnNormal"
+        android:onClick="onClick_btnTerrain"
+        android:text="Terrain" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/map"
+        android:layout_below="@+id/btnNormal"
+        android:layout_marginTop="14dp"
+        android:background="#FFFFFF"
+        android:text="Estimated Arrival Time:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    	
+    <Button
+        android:id="@+id/btnMapView"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/the_map"
+        android:layout_below="@+id/textView2"
+        android:onClick="onClick_btnMapView"
+        android:text="View" />
+    
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:background="@drawable/bar_bg"
+	 android:paddingTop="0dip" android:layout_gravity="top" 
+   >
+   
+         <!-- xmlns:android="http://schemas.android.com/apk/res/android"
+		   xmlns:tools="http://schemas.android.com/tools" --> 
+  <TableRow>
+      <LinearLayout android:layout_width="110dp"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="2dp"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    >
+        <ImageView
+	        android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+	        android:layout_gravity="left|top"  
+	        android:maxWidth="10dp"
+	        android:maxHeight="40dp"
+	        android:scaleType="fitCenter"
+	       
+	        android:id="@+id/image"
+	        
+	        />
+        </LinearLayout>
+        <!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <TableLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:paddingTop="0dip" android:layout_gravity="top" 
+      >
+      <TableRow> 	  
+	     <TextView
+		  	  android:id="@+id/text"
+		  	  android:layout_height="wrap_content"
+			  android:layout_width="wrap_content"
+			  android:layout_weight="1" android:layout_gravity="left|center_vertical" 
+			  android:textSize="16sp" 
+			  android:layout_marginLeft="10dip"
+			  android:layout_marginTop="4dip"
+			  android:textColor="#000000"
+			  android:layout_span="1"
+			  /> 
+		</TableRow>
+	    <TableRow>		  
+  	       <TextView
+  	          android:text=""
+		  	  android:id="@+id/text1"
+		  	  android:layout_height="wrap_content"
+			  android:layout_width="wrap_content"
+			  android:layout_weight="1" 
+			  android:layout_gravity="left|center_vertical" 
+			  android:textSize="16sp" 
+			  android:textColor="#000000"
+			  android:layout_marginLeft="8dip"
+			  android:layout_marginTop="4dip"
+			  android:gravity="left"/>
+        </TableRow>
+	  </TableLayout> 
+		
+         <ImageView
+	        android:layout_height="30dp"
+			android:layout_width="30dp"
+	        android:scaleType="centerCrop"
+	      
+	        android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:gravity="left"
+	        />
+ </TableRow>
+ 	
+     
+</TableLayout>
