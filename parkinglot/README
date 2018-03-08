@@ -1,0 +1,7 @@
+A parking lot 
+Support membership
+parking lot represented by a 2d array
+there are four entrance, the middle one on each side
+spots has compact, handicaped, and regular size (enum)
+different sizes/types of vehicles extended by abstract class
+The nearest parking spot is chosen as a parking (bfs search is done to find a spot)
