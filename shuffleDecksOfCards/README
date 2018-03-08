@@ -1,0 +1,5 @@
+Create a deck of card represented as "J-diamond", "1-heart", "Q-spade", "10-club", etc.
+User can create new deck of cards and shuffle it.
+Used strategy design pattern to implement two algorithms
+ONe randomly switch card positons to shuffle cards
+Another one to simulate humand shuffling by splitting into two halves, then put them together
