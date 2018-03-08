@@ -1,1 +1,1 @@
-Least recently used cache is implemented with LinkedHashMap
+Least recently used cache is implemented with a self-implemented linked hashmap
