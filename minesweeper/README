@@ -5,6 +5,9 @@ Command, strategy design patterns are implemented.
 There are two different strategies, one dummy whenever found a unchecked cell, it will click to check
 Two types of command: check to see if it's a mine and mark it as a mine.
 
+The board is generated based on input from property files. Loose coupling and configurable.
+The location of mines are generated randomly.
+
 When a cell is clicked and found safe, it will do a bfs search and to see if the adjacent cells are also safe. If all the cells 
 int this level are safe, just mark these cells as checked and display the number to players. When found a mine in this level, 
 do not check any of the cells in this level.
